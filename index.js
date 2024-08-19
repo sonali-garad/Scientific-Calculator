@@ -3,7 +3,7 @@ const cors = require("cors");
 const mysql = require("mysql2");
 const bodyParser = require("body-parser");
 const app = express();
-const Calculation = require("./calculation");
+const Calculator = require("./calculator");
 
 // Middleware
 app.use(cors());
