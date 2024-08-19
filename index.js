@@ -1,11 +1,11 @@
-const express = require("express");
-const cors = require("cors");
+const express = require("express"); //webconnect connect (backend and db)
+const cors = require("cors"); 
 const mysql = require("mysql2");
 const bodyParser = require("body-parser");
 const app = express();
-const Calculator = require("./calculator");
+const Calculation = require("./calculation"); //import cal file
 
-// Middleware
+// Middleware - > view controller
 app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static("public"));
@@ -14,7 +14,7 @@ app.use(express.static("public"));
 const db = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "Sumit@1009",
+  password: "Sonali@21",
   database: "calculator_db",
 });
 
